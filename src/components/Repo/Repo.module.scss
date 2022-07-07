@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 0fr) 1fr;
+  grid-template-rows: 1fr repeat(4, 0fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  border: 1px solid black;
+  margin-top: 10px;
+
+  & .nameBoxRepo {
+    margin-left: 10px;
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .nameRepo {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    & .nameDes {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #9E9E9E;
+    }
+  }
+
+  & .estimates {
+    margin: 10px 0;
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    flex-direction: column;
+
+    & .watchers {
+
+    }
+
+    & .forks {
+      margin-top: 5px;
+    }
+
+  }
+}

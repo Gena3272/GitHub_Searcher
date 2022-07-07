@@ -1,0 +1,19 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+
+  & .searchInput {
+    width: 300px;
+    margin-bottom: 5px;
+  }
+
+  & .resultInfo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9E9E9E;
+    margin-bottom: 10px;
+  }
+}
+
+
